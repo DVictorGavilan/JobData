@@ -1,0 +1,6 @@
+Tabla provincias info:
+id_provincia | provincia | num_ofertas | link_princial?
+
+Tabla empleos info:
+nombre_empleo | empresa | provincia | tecnologias | url | desc -> fecha_publicacion | modalidad | puesto | sueldo
+
