@@ -32,7 +32,7 @@ def get_provincias_info() -> dict[str: list[str]]:
     for id_provincia in range(231, 231 + 52):
         url: str = f'https://www.tecnoempleo.com/busqueda-empleo.php?pr=,{id_provincia},&pagina=1'
         soup: BeautifulSoup = get_html(url)
-        header: str = soup.find('h1', class_='h4 h5-xs py-4').text
+        header: str = soup.find('h1', class_='h5 h6-xs').text
         header_info: list[str] = [info.strip() for info in header.split(' ')]
         d_provincias_info['id_provincia'].append(id_provincia)
         d_provincias_info['provincia'].append(' '.join(header_info[6:-4]))
@@ -63,8 +63,8 @@ def gen_empleos_info(df: DataFrame):
             divs_info: ResultSet[Tag] = soup.find_all('div', class_='p-2 border-bottom py-3 bg-white')
             for div in divs_info:
                 empleo: str = div.find('h3', class_='h5 h6-xs mb-2').text.strip()
-                empleo_url: str = div.find('a', class_='font-weight-bold text-gray-700')['href']
-                empresa: str = div.find('a', class_='text-primary link-muted').text.strip()
+                empleo_url: str = div.find('a', class_='font-weight-bold text-gray-700 link-muted')['href']
+                empresa: str = div.find('a', class_='text-primary').text.strip()
                 provincia: str = df_provincias_info[provincia_num]['provincia'].values[0]
                 lenguajes: str = ' - '.join([leng.text.strip() for leng in div.find_all('a',
                                                                                         class_='badge-pill badge-soft badge-primary text-primary text-warning-hover py-1 px-2 fs--13 mr-1')])
