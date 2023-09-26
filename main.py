@@ -88,6 +88,18 @@ def gen_num_pages(num: int) -> range:
     final_page: int = ceil(num / 30 + 1)
     return range(1, final_page)
 
+def verificar_nulos_en_columna(df: pd.DataFrame, columna: str) -> bool:
+    if columna not in df.columns:
+        raise ValueError(f'La columna "{columna}" no existe en el DataFrame.')
+
+    return df[columna].isnull().any()
+
+# print(verificar_nulos_en_columna(df,'nombre_empleo'))
+# print(verificar_nulos_en_columna(df,'empresa'))
+# print(verificar_nulos_en_columna(df,'provincia'))
+# print(verificar_nulos_en_columna(df,'tecnologias'))
+# print(verificar_nulos_en_columna(df,'descripcion'))
+# print(verificar_nulos_en_columna(df,'url'))
 
 df_provincias_info: DataFrame = DataFrame(get_provincias_info())
 path_provincias_info: str = f'data/provincias_info_{date.today()}.csv'
@@ -99,3 +111,4 @@ df_provincias_info: DataFrame = pd.read_csv(
 df_empleos_info: DataFrame = DataFrame(gen_empleos_info(df_provincias_info))
 path_provincias_info: str = f'data/empleos_info_{date.today()}.csv'
 df_empleos_info.to_csv(path_provincias_info, index=False, sep=';')
+
