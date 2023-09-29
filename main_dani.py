@@ -2,7 +2,7 @@ import pandas as pd
 
 from datetime import date
 from pandas import DataFrame
-from job_data import scrapy, quality, transformation, utils
+from job_data import scrapy, utils
 
 
 path_provincias_info = 'config/provincias_info.json'
@@ -21,14 +21,3 @@ provincias_info = utils.read_json(path=path_provincias_info)
 for provincia in provincias_info['provincias']:
     print(provincia['name'], scrapy.get_total_jobs(provincia['id']))
     break
-
-##############################################################################################
-
-# for column in df_empleos_info.columns:
-    # quality.check_nulls(df_empleos_info, columna=column)
-
-##############################################################################################
-
-# data_job = pd.read_csv('data/empleos_info_2023-09-24.csv', sep=';')
-# data_job['aux_date']        = data_job['descripcion'].apply(transformation.add_date)
-# data_job['aux_descripcion'] = data_job['descripcion'].apply(transformation.add_separete_description)
