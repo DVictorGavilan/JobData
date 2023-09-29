@@ -1,5 +1,5 @@
-import pandas as pd
 import requests
+import tecnoempleo
 
 from math import ceil
 from bs4 import BeautifulSoup
@@ -26,17 +26,16 @@ def gen_d_provincias_info() -> dict[str: list[str]]:
     return d_provincias_info
 
 
-def get_provincias_info() -> dict[str: list[str]]:
+def get_provincias_info(info: dict) -> dict[str: list[str]]:
     d_provincias_info: dict[str: list[str]] = gen_d_provincias_info()
-    for id_provincia in range(231, 231 + 52):
-        url: str = f'https://www.tecnoempleo.com/busqueda-empleo.php?pr=,{id_provincia},&pagina=1'
+    for provincia in info['provincias']:
+        url: str = f"https://www.tecnoempleo.com/busqueda-empleo.php?pr=,{provincia['id']},&pagina=1"
         soup: BeautifulSoup = get_html(url)
-        header: str = soup.find('h1', class_='h5 h6-xs').text
+        header: str = soup.find(name=tecnoempleo.HEADER['tag'], attrs=tecnoempleo.HEADER['class_name']).text
         header_info: list[str] = [info.strip() for info in header.split(' ')]
-        d_provincias_info['id_provincia'].append(id_provincia)
+        d_provincias_info['id_provincia'].append(provincia['id'])
         d_provincias_info['provincia'].append(' '.join(header_info[6:]))
-        d_provincias_info['num_ofertas'].append(
-            header_info[0].replace('.', ''))
+        d_provincias_info['num_ofertas'].append(header_info[0].replace('.', ''))
     return d_provincias_info
 
 
@@ -52,28 +51,22 @@ def gen_d_empleos_info() -> dict[str: list[str]]:
     return dic_empleos_info
 
 
-def gen_empleos_info(df_provincias_info: DataFrame):
-    d_empleos_info: dict[str: list[str]] = gen_d_empleos_info()
+def gen_empleos_info(df: DataFrame) -> dict[str: list[str]]:
+    d_empleos_info = gen_d_empleos_info()
     for id_provincia in range(231, 231 + 52):
-        provincia_num: bool = df_provincias_info['id_provincia'] == id_provincia
-        num_pages: float = df_provincias_info[provincia_num]['num_ofertas'].values[0]
+        provincia_num = df['id_provincia'] == id_provincia
+        num_pages = df[provincia_num]['num_ofertas'].values[0]
         for page in gen_num_pages(num_pages):
             url = f'https://www.tecnoempleo.com/busqueda-empleo.php?pr=,{id_provincia},&pagina={page}'
             soup: BeautifulSoup = get_html(url)
-            divs_info: ResultSet[Tag] = soup.find_all(
-                'div', class_='p-2 border-bottom py-3 bg-white')
+            divs_info: ResultSet[Tag] = soup.find_all(name=tecnoempleo.DIVS['tag'], attrs=tecnoempleo.DIVS['class_name'])
             for div in divs_info:
-                empleo: str = div.find(
-                    'h3', class_='h5 h6-xs mb-2').text.strip()
-                empleo_url: str = div.find(
-                    'a', class_='font-weight-bold text-gray-700')['href']
-                empresa: str = div.find(
-                    'a', class_='text-primary').text.strip()
-                provincia: str = df_provincias_info[provincia_num]['provincia'].values[0]
-                lenguajes: str = ' - '.join([leng.text.strip() for leng in div.find_all('a',
-                                                                                        class_='badge bg-primary-soft bg-primary-hover fw-normal font-weight-normal fs--14 mr-2 me-2')])
-                descripcion: str = ' '.join([desc.strip() for desc in div.find('div',
-                                                                               class_='col-12 col-lg-3 text-gray-600 pt-2 line-height-10 text-right hidden-md-down').text.split()])
+                empleo: str = div.find(name=tecnoempleo.EMPLEO_NAME['tag'], attrs=tecnoempleo.EMPLEO_NAME['class_name']).text.strip()
+                empleo_url: str = div.find(name=tecnoempleo.EMPLEO_URL['tag'], attrs=tecnoempleo.EMPLEO_URL['class_name'])['href']
+                empresa: str = div.find(name='a', attrs={'class': 'text-primary'}).text.strip()
+                provincia: str = df[provincia_num]['provincia'].values[0]
+                lenguajes: str = ' - '.join([leng.text.strip() for leng in div.find_all(name=tecnoempleo.LENGUAJES['tag'], attrs=tecnoempleo.LENGUAJES['class_name'])])
+                descripcion: str = ' '.join([desc.strip() for desc in div.find(name=tecnoempleo.DESCRIPCION['tag'], attrs=tecnoempleo.DESCRIPCION['class_name']).text.split()])
                 d_empleos_info['nombre_empleo'].append(empleo)
                 d_empleos_info['empresa'].append(empresa)
                 d_empleos_info['provincia'].append(provincia)

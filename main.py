@@ -2,10 +2,13 @@ import pandas as pd
 
 from datetime import date
 from pandas import DataFrame
-from job_data import scrapy, quality, transformation
+from job_data import scrapy, quality, transformation, utils
 
 
-df_provincias_info: DataFrame = DataFrame(scrapy.get_provincias_info())
+path_provincias_info = 'config/provincias.json'
+provincias_info = utils.read_json(path=path_provincias_info)
+
+df_provincias_info: DataFrame = DataFrame(scrapy.get_provincias_info(provincias_info))
 path_provincias_info: str = f'data/provincias_info_{date.today()}.csv'
 df_provincias_info.to_csv(path_provincias_info, index=False, sep=';')
 
@@ -25,7 +28,3 @@ for column in df_empleos_info.columns:
 data_job = pd.read_csv('data/empleos_info_2023-09-24.csv', sep=';')
 data_job['aux_date']        = data_job['descripcion'].apply(transformation.add_date)
 data_job['aux_descripcion'] = data_job['descripcion'].apply(transformation.add_separete_description)
-
-
-print(data_job['aux_date'].dtype)
-print(data_job[['aux_date', 'aux_descripcion']].tail().to_string())
