@@ -1,10 +1,10 @@
 import requests
-import tecnoempleo
 
 from math import ceil
-from bs4 import BeautifulSoup
 from pandas import DataFrame
+from bs4 import BeautifulSoup
 from requests import Response
+from job_data import tecnoempleo
 from bs4.element import Tag, ResultSet
 
 
@@ -24,6 +24,15 @@ def gen_d_provincias_info() -> dict[str: list[str]]:
         'num_ofertas': []
     }
     return d_provincias_info
+
+
+
+def get_total_jobs(id: str) -> int:
+    url: str = f"https://www.tecnoempleo.com/busqueda-empleo.php?pr=,{id},&pagina=1"
+    soup: BeautifulSoup = get_html(url)
+    header: str = soup.find(name=tecnoempleo.HEADER['tag'], attrs=tecnoempleo.HEADER['class_name']).text
+    header_info: list[str] = [info.strip() for info in header.split(' ')]
+    return int(header_info[0].replace('.', ''))
 
 
 def get_provincias_info(info: dict) -> dict[str: list[str]]:
