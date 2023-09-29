@@ -12,7 +12,9 @@ def add_separete_description(value: str) -> str:
     return re.sub(r'(?<=[a-z])(?=[A-Z])', ' ', value)
 
 
+def add_list_technologies(value: str) -> list:
+    return []
 
-
-
+def normalized_technologies(technologies: list) -> list:
+    return []
 
