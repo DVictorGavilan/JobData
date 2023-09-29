@@ -4,3 +4,53 @@ id_provincia | provincia | num_ofertas
 Tabla empleos info:
 nombre_empleo | empresa | provincia | tecnologias | url | desc -> fecha_publicacion | modalidad | puesto | sueldo
 
+Tecnologias (tecnologia_bruta -> lower -> replace)
+
+Python
+DJango
+Pandas
+Flask
+Numpy
+
+Java
+Spring
+SpringBoot
+
+JavaScript
+Angular
+React
+NodeJS
+
+PHP
+Symphony
+
+C#
+.Net
+.Net Core
+
+HTML
+
+CSS
+
+Spark
+
+Ruby
+Ruby on Rails
+
+Linux
+
+Azure
+
+AWS
+
+GCP
+
+Tableu
+
+PowerBI
+
+Kubernetes
+
+Docker
+
+Git
