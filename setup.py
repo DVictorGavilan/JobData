@@ -16,7 +16,7 @@ setup(
     },
     author='VTech Solutions',
     author_email='contacto@vtech.com',
-    description='Una breve descripción de tu proyecto',
+    description='Job Data analysis from TecnoEmpleo',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/DVictorGavilan/JobData'
