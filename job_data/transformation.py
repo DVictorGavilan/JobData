@@ -2,21 +2,25 @@ import re
 import pandas as pd
 from typing import List
 
+
+DATE_FORMAT = '%d/%m/%Y'
+REGEX_SEPARETE_DESCPRIPTION = r'(?<=[a-z])(?=[A-Z])', ' '
+SEPARATE_TECHNOLOGIES = ' - '
+
+
 def add_date(value: str) -> str:
     value = value.strip()
-    value = pd.to_datetime(value[:10], format='%d/%m/%Y')
+    value = pd.to_datetime(value[:10], format=DATE_FORMAT)
     return value
 
 
-def add_separete_description(value: str) -> str:
-    return re.sub(r'(?<=[a-z])(?=[A-Z])', ' ', value)
+def add_separate_description(value: str) -> str:
+    return re.sub(REGEX_SEPARETE_DESCPRIPTION, value)
 
 
 def add_list_technologies(value: str) -> List[str]:
-    # Dividir la cadena en una lista usando ' - ' como separador
-    tech_list = value.split(' - ')
-    return tech_list
+    return value.split(SEPARATE_TECHNOLOGIES)
+
 
 def normalized_technologies(technologies: list) -> list:
     return []
-
