@@ -8,7 +8,7 @@ from job_data import scrapy, utils
 path_provincias_info = 'config/provincias_info.json'
 provincias_info = utils.read_json(path=path_provincias_info)
 
-# df_provincias_info: DataFrame = DataFrame(scrapy.get_provincias_info(provincias_info))
+df_provincias_info: DataFrame = DataFrame(scrapy.get_provincias_info(provincias_info))
 # path_provincias_info: str = f'data/provincias_info_{date.today()}.csv'
 # df_provincias_info.to_csv(path_provincias_info, index=False, sep=';')
 
@@ -18,6 +18,4 @@ provincias_info = utils.read_json(path=path_provincias_info)
 # path_provincias_info: str = f'data/empleos_info_{date.today()}.csv'
 # df_empleos_info.to_csv(path_provincias_info, index=False, sep=';')
 
-for provincia in provincias_info['provincias']:
-    print(provincia['name'], scrapy.get_total_jobs(provincia['id']))
-    break
+

@@ -38,13 +38,10 @@ def get_total_jobs(id: str) -> int:
 def get_provincias_info(info: dict) -> dict[str: list[str]]:
     d_provincias_info: dict[str: list[str]] = gen_d_provincias_info()
     for provincia in info['provincias']:
-        url: str = f"https://www.tecnoempleo.com/busqueda-empleo.php?pr=,{provincia['id']},&pagina=1"
-        soup: BeautifulSoup = get_html(url)
-        header: str = soup.find(name=tecnoempleo.HEADER['tag'], attrs=tecnoempleo.HEADER['class_name']).text
-        header_info: list[str] = [info.strip() for info in header.split(' ')]
+        n_total_jobs = get_total_jobs(provincia['id'])
         d_provincias_info['id_provincia'].append(provincia['id'])
-        d_provincias_info['provincia'].append(' '.join(header_info[6:]))
-        d_provincias_info['num_ofertas'].append(header_info[0].replace('.', ''))
+        d_provincias_info['provincia'].append(provincia['name'])
+        d_provincias_info['num_ofertas'].append(n_total_jobs)
     return d_provincias_info
 
 
