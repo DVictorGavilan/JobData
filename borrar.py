@@ -13,7 +13,7 @@ def print_pretty_dict(dictionary: dict) -> None:
 
 
 def normalized_technology_name(raw_name: str) -> str:
-    if raw_name in ['python', 'pyhton']:
+    if raw_name in ['python', 'pyhton', 'phyton']:
         return 'Python'
     elif raw_name in ['javascript', 'javascri', 'javacrip', 'javascrip', 'js']:
         return 'JavaScript'
@@ -35,7 +35,7 @@ def normalized_technology_name(raw_name: str) -> str:
         return 'Java'
     elif raw_name in ['spring', 'java spring']:
         return 'Spring'
-    elif raw_name in ['springboot', 'spring boot']:
+    elif raw_name in ['springboot', 'spring boot', 'springboot.']:
         return 'SpringBoot'
     elif raw_name in ['php']:
         return 'PHP'
@@ -43,6 +43,10 @@ def normalized_technology_name(raw_name: str) -> str:
         return 'Laravel'
     elif raw_name in ['c#']:
         return 'C#'
+    elif raw_name in ['html', 'html5']:
+        return 'HTML'
+    elif raw_name in ['css', 'css3']:
+        return 'CSS'
     elif raw_name in ['kotlin', 'kotling']:
         return 'Kotlin'
     elif raw_name in ['net', '.net', 'visual studio.net']:
@@ -55,20 +59,56 @@ def normalized_technology_name(raw_name: str) -> str:
         return 'GCP'
     elif raw_name in ['sql']:
         return 'SQL'
+    elif raw_name in ['pl/sql', 'plsql']:
+        return 'PL/SQL'
     elif raw_name in ['mysql']:
         return 'MySQL'
     elif raw_name in ['PostgreSQL', 'postgres']:
         return 'PostgreSQL'
     elif raw_name in ['oracle']:
         return 'Oracle'
-    elif raw_name in ['sql server']:
+    elif raw_name in ['sql server', 'sqlserver']:
         return 'SQL Server'
+    elif raw_name in ['datalake', 'data lake', 'datalakes']:
+        return 'Data Lake'
     elif raw_name in ['sap']:
         return 'SAP'
     elif raw_name in ['sap s4']:
         return 'SAP S/4HANA'
-    elif raw_name in ['docker', 'docke']:
+    elif raw_name in ['docker', 'docke', 'dockers']:
         return 'Docker'
+    elif raw_name in ['powerbi']:
+        return 'PowerBI'
+    elif raw_name in ['tableau']:
+        return 'Tableau'
+    elif raw_name in ['datastudio', 'data studio']:
+        return 'Data Studio'
+    elif raw_name in ['databricks', 'data bricks']:
+        return 'DataBricks'
+    elif raw_name in ['data science', 'data scientist']:
+        return 'Data Science'
+    elif raw_name in ['data analytics']:
+        return 'Data Analytics'
+    elif raw_name in ['data governance']:
+        return 'Data Governance'
+    elif raw_name in ['data visualization']:
+        return 'Data Visualization'
+    elif raw_name in ['microsoft', 'microsoft 365', 'microsoft office', 'microsoft office 365']:
+        return 'Microsoft 365'
+    elif raw_name in ['excel', 'microsoft excel']:
+        return 'Microsoft Excel'
+    elif raw_name in ['word']:
+        return 'Microsoft Word'
+    elif raw_name in ['access', 'microsoft access']:
+        return 'Microsoft Access'
+    elif raw_name in ['microsoft d365', 'microsoft dynamics', 'microsoft dynamics 365', 'm365']:
+        return 'Microsoft Dynamics'
+    elif raw_name in ['microsoft teams']:
+        return 'Microsoft Teams'
+    elif raw_name in ['microservices', 'microservicios']:
+        return 'Microservicios'
+    elif raw_name in ['microiformatica', 'microinformatica', 'microinformática']:
+        return 'Microinformática'
     else:
         return raw_name
 
@@ -90,3 +130,6 @@ for tech, n in count_repeated_values(technologies).items():
 
 print(len(set(technologies_raw)))
 print(len(set(technologies)))
+
+pandas.DataFrame({'Technology': sorted(list(set(technologies)))}).to_csv(
+    'data/technologies_raw.csv', index=False)
