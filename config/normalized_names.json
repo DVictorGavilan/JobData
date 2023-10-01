@@ -222,6 +222,7 @@
     "access": "Microsoft Access",
     "microsoft access": "Microsoft Access",
     "dynamics": "Microsoft Dynamics",
+    "dynamics 365": "Microsoft Dynamics",
     "microsoft d365": "Microsoft Dynamics",
     "microsoft dynamics": "Microsoft Dynamics",
     "microsoft dynamics 365": "Microsoft Dynamics",
@@ -320,6 +321,9 @@
     "prestashop": "PrestaShop",
     "shopify": "Shopify",
     "figma": "Figma",
+    "cisco": "Cisco",
+    "helpdesk": "Help Desk",
+    "seo": "SEO",
     "ingles": "Inglés",
     "b2 de inglés": "Inglés"
 }

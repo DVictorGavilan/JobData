@@ -1,1057 +1,1052 @@
 Technology,Count
-redes,85
-Java,7462
-office 365,9
-ntp,1
-ipc,1
-ewipo,1
-electricidad,6
-blue prism,2
-analista,2
-xml,1
-datafactory,52
-cti,52
-plc,32
-fpga,3
-ecommerce,11
-ear/pilar,1
-5s,1
-Microsoft Power Platform,4
-cia,2
-energia,2
-af,1
-design,2
-teststand,1
-tecnología de la información,1
-nutanix,2
-tizen,1
-ketch,1
-vbasic,1
-bi,162
-business analyst,1
-nids,1
-SAP MM,10
-lakehouse,1
-scada,12
-Google Data Studio,52
-pmo,108
-xdr,1
-owasp,104
-kenshoo,1
-Angular,2880
-wifi,2
-vsphere,5
-servidores web,52
-SolidWorks,124
-MariaDB,6
-creo,1
-casb,52
-test driven development tdd,52
-satcom,1
-Symfony,283
-prometheus,52
-Unity,53
-Microservicios,1332
-tap,1
-ISO 27000,1
-dialogflow,1
-ada,1
-jenkis,52
-integrador it,1
-magnolia,104
-psd2,52
-iec,1
-pcb,1
-configuración incial,1
-openoffice,52
-framework,1
-apw,1
-rss,1
+cadence,1
+Microsoft 365,108
+cakephp,1
+macos,1
+radio,2
+google marketing platform,1
+JQuery,106
 tpv,2
-firmware,6
-uwp,53
-programmatic,1
-autodesk,3
-telecomunicaciones,18
-cics,112
-Microsoft PowerPoint,3
-axapta,3
-bpm,208
-Google Analytics,117
-green business book,52
-galileo,1
-helpdesk,72
-lan,69
-selenide,1
-braze,1
-SQL,900
-análisis forense,1
-gherkin,1
-microcontroladores,3
-pcbs,1
-power,1
-adobe photoshop,1
-funnel,1
-liferay,58
-google search ads 360,1
-pantallas led,1
-e commerce,4
-it,7
-ipronet,1
-deep learning,1
-oscp,1
-rabbitmq,52
-Cloud,501
-ompi,1
-mi2,1
-pvsyst,5
-ibm guardium,1
-banksphere,53
-SAP BO,1
-ETL,287
+ewipo,1
+eventhubs,1
+autosar,9
+suite adobe,1
+jasper reports,1
+magic,1
+dialogflow,1
+proposal writing,1
+visión artificial,2
+matlab,10
+helix bmc,1
+tomcat,59
+Web Services,106
+cake,1
+devsecops,54
+google search console,1
+cableados de rack,1
+dynamics fo,3
+fortinet,111
+wimax,1
 enterprise architect,52
-ui path,2
-cloudops,1
-SAP HCM,105
-atlan,2
-linux suse,1
-spss,1
-comercial,1
-powertrain,1
-cloud bees,52
-redux,3
-ebs,52
-SAP Ariba,52
-appian,107
-pspice,4
-nat,1
-spi,1
-elk,52
-oci,1
-lotus,52
-istqb,1
-smed,1
-itil,115
-osstmm,52
-photoshop,8
-secops,5
-refx,1
-transformacion digital,1
-vmware,153
-google suite,2
-fibra óptica,2
-ia,1
-onetrust,52
+indesign,2
+wlan,1
+power,1
+shell,2
+screaming frog,1
+anfes,1
+gestión proyectos,1
+graphql,2
+Git,236
+.Net Core,287
+sonarqube,53
+it,7
+psd2,52
+open project,1
+bash,157
+rdfs/owl,1
+Data Governance,57
 office365,57
+forms,2
+industria,1
+recruitment,1
+canopen,1
+cirptografía,1
+analyst,1
+oracle forms,105
+Cisco,73
+contabilidad,1
+SaaS,3
+cloudops,1
+juniper,5
+rss,1
+ensamblador,1
+ga,1
+soporte,130
+conan,1
+banksphere,53
+commvault,2
+SolidWorks,124
+Sage ERP,2
+android estudio,1
+jes2,1
+MariaDB,6
+gradle,1
+satellite,1
+sistemas operativos,1
+gpo,2
+pentaho,1
+paloalto,52
+colibra,3
+datahubs,104
+websphere,2
+nav,1
+microcontroladores,3
+semrush,2
+bing ads,2
+katalon,1
+Google Analytics,117
+primefaces,52
+proyectos it,1
+tls,1
+ticketing,3
+vcenter,3
+crm,58
+jefe de proyecto,1
+c#. sql,5
+catia,3
+voip,1
+hook,5
+servidores,2
+prince 2,1
+Selenium,382
+uml,105
+Microsoft Power BI,238
+data center,1
+Microsoft Teams,3
+rdf,1
+casb,52
+mikrotik,2
+jasmine,1
+secops,5
+omnistudio,52
+datos,1
+sff,1
+winforms,1
+Java,7462
+android tv,1
+nlp,1
+marketplace,1
+entornos linux windows,1
+backend,1
+ansible,161
+norkom,57
+PL/SQL,383
+radionavegación,1
+Scala,169
+etap,2
+Next.js,1
+SAP BW,2
+npl,1
+hl7,2
+mecatrónica,2
+axway,52
+lamp,108
+cia,2
+ui path,2
+autodesk,3
+Unix,217
+R,177
+was,3
+cableado,3
+NextJS,208
+m3,2
+mba,1
+palo alto,106
+rest api,2
+control m,3
+ericsson,11
+on premise,1
+natural adabas,1
+powercenter,105
+pmi,1
+dynamics navision,1
+Python,1441
+inventor,3
+ssl,1
+natural,52
+lamda,52
+data services,3
+cirbe,52
+C++,476
+wp,53
+GitHub,2
+iec,1
+MicroStrategy,60
+sat,1
+hfc,1
+sdd,52
+dataguard,1
+oscp,1
+rtos,1
+avaya,1
+aks,1
+tsql,6
+targetlink,1
+vlan,1
+Agile,1276
+cert,2
+monitores,1
+mi2,1
+miro,1
+inteligencia artificial,8
+iaas,2
+elastic search,1
+struts,1
+Lean,1000
+pvdesign,2
+configuración incial,1
+PHP,1239
+host,52
+mantis,52
+IOS,749
+bms,1
+marin,1
+async,1
+milestone,1
+apple bussiness manager,1
+primavera p6,1
+creativity,1
+MongoDB,112
+prince2,2
+isms,1
+oracle weblogic,52
+d3jhs,1
+gps,1
+Kotlin,288
+viewmodel,2
+3gpp,2
+xamarin,53
+rfq,1
+rocky,1
+biztalk,52
+Flask,53
+Linux,837
+itsm,105
+cms,52
+mac os,1
+cloud bees,52
+rhel,3
+social ads,3
+esri,53
+kaizen,2
+microsoft ax,1
+aix,1
+ompi,1
+snmp,1
+qualys,1
+SalesForce,169
+SAP MM,10
+virtualización,2
+SpringBoot,1678
+Android,338
+CI/CD,216
+lowcode,1
+project manager,75
+electricidad,6
+linux suse,1
+labview,4
+as/400,4
+emc,1
+huawei,5
+hpux,52
+sbm,1
+cucumber,56
+apx,52
+okr,52
+Microsoft Power Platform,4
+google search ads 360,1
+puppet,2
+automation,4
+tmb,2
+qlik,6
+ibm mqseries,1
+servicenow,113
+transact sql,1
+google suite,2
+Numpy,3
+pl1,52
+satcom,1
+qgis,2
+procurve,2
+NodeJS,1058
+testlink,4
+SAP SuccessFactors,1
+ppc,5
+nutanix,2
+adobe photoshop,1
+TypeScript,711
+vulnerability analysis,1
+maven sql,1
+twig,1
+systems,1
+snow,52
+autocad,29
+ldap,157
+pv,1
+firewall,62
+Microsoft Excel,26
+tag manager,52
+edr,5
+continuous improvement,1
+JPA,111
+razor,6
+génesys,1
+ada,1
+consultoria it,1
+tic,3
+veeam backup,1
+enterprise vault,52
+intune,4
+netreveal,4
+pam,1
+Symfony,283
+Microsoft Access,5
+cad 3d,2
+clean code,104
+orcad,1
+six sigma,6
+Data Analytics,7
+core,2
+Microsoft Power Pivot,1
+hellix,1
+redux,3
+sengrid,1
+ivr,1
+waf,6
+moodle,52
+Inglés,105
+vcloud,1
+guidewire,2
+pros,1
+customer journey,2
+itom,57
+automatismos,2
+bpm,208
+diseño,1
+infraestructura it,1
+omron,5
+mpls,1
+presto,4
+Service Desk,2
+iot,4
+step 7,1
+cypher,1
+spring data,52
+apw,1
+Ubuntu,3
+halcon,1
+sre,1
+fgc,2
+psim,4
+rockwell,2
+cyber security,1
+Hibernate,222
+openstack,52
+aiv,1
+sistemas biométricos,1
+pm,4
+cctv,1
+lua,1
+vmware,153
+sap ewm,1
+banca,52
+usd,52
+idq,52
+Microinformática,23
+hacking ético,1
+tecnología de la información,1
+blueprism,52
+Testing,1163
+smd,1
+hacking,1
+cyberark,3
+JavaScript,2136
+team lead,1
+SA FICA,52
+SQL Server,414
+peoplesoft,52
+Java Swing,6
+simulink,6
+Microsoft Outlook,2
+Apache,2
+mapex,1
+SAP BW/4HANA,1
+tap,1
+pi vision,1
+plc,32
+photoshop,8
+gherkin,1
+trello,2
+iis,1
+google earth,1
+notes,52
+cognex,1
+ETL,287
+xenapp,1
+cocoa,1
+netapp,52
+prototype,1
+appian,107
+libreoffice,52
+IBM DB2,226
+frontend,1
+Hadoop,4
+osstmm,52
+ipronet,1
+Swift,540
+gitlab,2
+Scripting,53
+robótica,4
+tiktok,1
+PySpark,161
+qlik sense,2
+af,1
+onetrust,52
+Remedy,2
+office 365,9
+sd wan,1
+batch,3
+microsoft project,1
+outsourcing,1
+nosql,4
+mlops,52
+soc,2
+auditorias,4
+canbus,1
+Microservicios,1332
+Google Big Query,109
+rman,6
+software,20
+business objects,1
+hmi,1
+eclipse,2
+PowerShell,113
+openoffice,52
+braze,1
+rpgle,1
+xray,1
+creo,1
+oracle tuxedo,1
+electronic,1
+wai aria,1
+sepa,156
+aspice,53
+rfp,1
+diseño gráfico,1
+mes,6
+rancher,2
+gosu,2
+sas,2
+backup,54
+SAP Business One,3
+directorio activo,56
+t sql,54
+solaris,52
+electron,52
+linux administration: centos,1
+prometheus,52
+csx,1
+spring cloud,5
+vsphere,5
+camt,1
+nema,1
+woocomerce,52
+luw,52
+amazon ads,1
+cissp,5
+cism,6
+sonycwall,1
+5s,1
+.Net Visual Basic,56
+gestion proyectos,1
+google tag manager,54
+eagle,1
+iscsi,2
+test driven development tdd,52
+Axure RP,2
+jetpack,1
+ssis,2
+xendesktop,1
+Business Intelligence,165
+capacitor,52
+oepm,1
+data link,1
+hyper v,53
+.Net,1344
+API REST,280
+growth,1
+teldat,1
+web api,6
+robotmachine,1
+sct,52
+itil,115
 cloudera,53
-amdocs,52
+exchange,57
+sistemas,2
+SAP HCM,105
+wan,12
+x86,1
+appium,54
+systems deployments,1
+adas,2
+Objective-C,315
+SAP,852
+networking,54
+BBDD,106
+wintel,1
+Bootstrap,157
+elk,52
+entity framework,1
+azure ad,54
+tibco,2
+.Net ASP CORE,1
+apple,3
+proxys,1
+design,2
+business analyst,1
+Go,9
+COBOL,595
+call manager,1
+vb,1
+redes,85
+ngrx,1
+Laravel,440
+rpa,159
+emar,1
+field service,1
+pvsyst,5
+kanban,58
+banca electrónica,1
+f5,55
+suse,1
+SAN/NAS,6
+redis,1
+Spring,1779
+lakehouse,1
+azure devops,55
+debian,2
+crystal reports,1
+proxmox,1
+Google AdWords,6
+kam,1
+graficos,1
+informática,1
+success factors,1
+DataBricks,2
+PrestaShop,162
+uas/uav,1
+exadata,1
+deep learning,1
+sharepoint,58
+Soap UI,53
+swagger,53
+Ruby,104
+mt940,1
+d2d,1
+servidores web,52
+jefe de equipo,2
+maintenance,1
+Help Desk,72
+maven,2
+sistemas embebidos,2
+svn,58
+MySQL,335
+doors,56
+SA FI,11
+big data,3
+redes sociales,1
+pick place,1
+magnolia,104
+sccm,7
+ux,58
+vlovity,1
+mil,1
+DJango,110
+datafactory,52
+JPA2,52
+videojuegos,1
+analista,2
+fcas,1
+digital marketing,1
+clickview,1
+Salesforce Marketing Cloud,2
+oracle primavera unifier,52
+quasar,52
+spm,1
+criptografía,2
+Ingeniería Industrial,8
+fiori,2
+analytics,9
+pi system,1
+spss,1
+tdd,53
+ISO 27000,1
+microsoft exchange,55
+erp,56
+tarjetas,52
+SCADA,1
+blue prism,2
+SOLID,52
+cordova,52
+scada,12
+CiberSeguridad,727
+kibana,52
+e commerce,4
+its,1
+istqb,1
+qt,55
+programmatic,1
+Nest.js,1
+ExpressJS,55
+research,1
+slm,1
+cics,112
+funnel,1
+electronica,13
+xunit,1
+arquitecturahexagonal,52
+fibra óptica,2
+ibm guardium,1
+SAP Ariba,52
+Azure,892
+asterisk,1
+yaml,56
+restful,1
+i+d,4
+firmware,6
+lotus,52
+owasp,104
+Data Visualization,52
+oracle bi,52
+gestión,4
+cypress,56
+rabbitmq,52
+ofimática,1
+Matplotlib,3
+ebs,52
+electrónica,43
+jd edwards,4
+premiere,1
+AWS,1260
+control de riesgos,1
+automatización,1
+jenkis,52
+pega,3
+robótica industrial,1
+red team,1
+axapta,3
+controlm,1
+sonar,2
+eplan electric p8,1
+atlassian,53
+malware,4
+ibm,52
+sparql,1
+tekla,1
+adobe premier,1
+telecomunicaciones,18
+SAP ABAP,229
+udb,52
+Jenkins,267
+ftth,2
+React,1955
+citrix,5
+mural,1
+dynamics nav,1
+tráfico aéreo,52
+weblogic,55
+5g,11
+frances,2
+Data Science,2
+ear/pilar,1
+social media,2
+C,119
+ipc,1
+tia portal,1
+oracle e business suite,1
+illustrator,3
+dynamics ax,6
+Ingeniería,3
+ccna,5
+srm,1
+dns,58
+ecmascript,1
+odoo,2
+crisc,1
+prince,3
+wasp,2
+Flutter,114
+sugar,52
+Spark,230
+2d,1
+zoho crm,1
+pspice,4
+sass,1
+spring batch,53
+transformacion digital,1
+cognito,52
+zendesk,2
+vlocity,52
+ISO 22301,1
+rtus,1
+Microsoft Dynamics,341
+Postman,159
+nuxt,53
+ppap,1
+aruba,4
+liferay,58
+calidad,71
+hpalm,1
+fullstack,1
+monitorización,52
+business development,1
+drupal,61
+mparticle,1
+genesys,2
+ccnp,2
+rexx,1
+nist,2
+ml,52
+framework,1
+aso,52
+green business book,52
+ngws,1
+pcb,1
+SAP IS-U,53
+SSAS,1
+autómatas,1
+telemática,1
+Microsoft PowerPoint,3
+cisco unity,1
+frameworks,52
+maquetado,2
+visual studio,8
+almacenamiento,2
+Oracle,1103
+ddi,1
+producto owner,1
+zero code,52
+coordination,1
+marketing digital,10
+PyTest,52
+im,1
+mainframe,56
+Figma,7
+z/os,3
+marketing,57
+Visual Basic,59
+active directory,75
+bpo it,1
+rescat,2
+mern,1
+dax,1
+edc,53
+mqfte,1
+.Net ASP,142
+mvc,18
+community manager,1
+cad,3
+data,232
+GCP,67
+SAP PP,5
+Angular,2880
+ntp/ptp,1
+virtualizacion,1
+ax,1
+mailchimp,1
+wso2,53
+PostgreSQL,10
+SAP PM,55
+Confluence,217
+restemplate,1
+powerapps,53
+mlflow,1
+neo4j,1
+paas,1
+rac,7
+análisis forense,1
+redhat,7
+instagram,1
+Windows,223
+ot,1
+terraform,167
+cnc,1
+Routing,8
+cloud sql postgre,5
+atlan,2
+industria 4 0,1
+J2EE,607
+storage,52
+iso,5
+mgd,52
+pmp,81
+apqp,1
+hardware,27
+ssrs,2
+blazor,1
+it strategy,1
+development,2
+tableu,1
+ISO 26262,52
+nfs,2
+adobe xd,1
+it procurement,1
+dba,110
+atm,3
+c# net,2
+stm,1
+respaldo,1
+SAP S/4HANA,168
+scss,2
+horizon,1
+delphi,4
+ux/ui,14
+i2c,1
+Ruby on Rails,54
+Microsoft Word,2
+teststand,1
+SAP LE,1
 computer vision,54
 basis,1
-rescat,2
-presto,4
-development,2
-guidewire,2
-tráfico aéreo,52
-opengate,1
-mainframe,56
-pi vision,1
-rrss,2
-monitorización,52
-xendesktop,1
-Data Science,2
-tarjetas,52
-ticketing,3
-customer journey,2
-team lead,1
-atm,3
-Data Visualization,52
-ngrx,1
-tdd,53
-ibm mqseries,1
-dynamics nav,1
-middleware,5
-hmi,1
-apqp,1
-Windows,223
-prince2,2
-kibana,52
-redhat,7
-tsql,6
-ip,55
-sonarqube,53
-marketplace,1
-control m,3
-sap ewm,1
-snmp,1
-cocoa,1
-cism,6
-mern,1
-ax,1
-sengrid,1
-bms,1
-emset,1
-firewall,62
-openshift,61
-rtos,1
-paloalto,52
-eagle,1
-active directory,75
-sdd,52
-cableados de rack,1
-doors,56
-telemática,1
-CI/CD,216
-rockwell,2
-ntp/ptp,1
-labview,4
-firebase,52
-JSF,210
-analysis,53
-sharepoint,58
-industria 4 0,1
-seo,72
-drupal,61
-psim,4
-magic,1
-spm,1
-pv,1
-google marketing platform,1
-jmeter,52
-apex,3
-altium,5
-Ingeniería,3
-monitores,1
-social ads,3
-ux/ui,14
-gestión proyectos,1
-osi,1
-rpgsqle,1
-marin,1
-ssrs,2
-capacitor,52
-bing ads,2
-okr,52
-sct,52
-MongoDB,112
-success factors,1
-smd,1
-rfp,1
-cirptografía,1
-imap,1
-restful,1
+Unity,53
+xml,1
+oci,1
 wpf,107
-Microsoft Dynamics,279
-frameworks,52
-4g,10
-marketing digital,10
-digital marketing,1
-cableado,3
-cloud sql postgre,5
-Flask,53
-respaldo,1
-Spark,230
-HTML,491
-Data Lake,262
-VBA,1
-alarmas,1
-restemplate,1
-ppap,1
-c#. sql,5
-Microsoft Teams,3
-azure functions,52
-omron,5
-hardware,27
-PySpark,161
-ionic,52
-Numpy,3
-xamarin,53
-shell,2
-business development,1
-SAP LE,1
-grafana,52
-google search console,1
-AWS,1260
-pvdesign,2
-amazon ads,1
-jes2,1
-.Net ASP,142
-mural,1
-Android,338
-qradar,52
-oracle forms,105
-Switching,8
-nexus,53
-Microsoft Outlook,2
-NextJS,208
-JPA2,52
-procurve,2
-palo alto,106
-nagios,54
-cad 3d,2
-apple,3
-rocky,1
-sff,1
-nosql,4
-analytics,9
-redis,1
-ISO 26262,52
-aml/pbc,52
-cognex,1
-Progress,105
-mba,1
-primavera p6,1
-Figma,7
-pm,4
-Linux,837
-tomcat,59
-vcloud,1
-API REST,280
-visión artificial,2
-sst,1
-airflow,3
-cypher,1
-C++,476
-illustrator,3
-hacking ético,1
-jefe de proyecto,1
-SAP PP,5
-pega,3
-Service Desk,2
-analizadores de espectro,1
-wai aria,1
-srm,1
-catia,3
-Kubernetes,440
-notes,52
-moodle,52
-fhir,1
-time,1
-Hive,53
-PL/SQL,383
-ciberseguidad,1
-appium,54
-coordination,1
-screaming frog,1
-cisco,73
-mlops,52
-automatización,1
-hpux,52
-nuxt,53
-Unix,217
-sre,1
-open project,1
-wso2,53
-electrónica,43
-Axure RP,2
-wlan,1
-diseño,1
-Ruby,104
-telco,5
-auditorias,4
-tableu,1
-rpa,159
-ansible,161
-maven sql,1
-cyberark,3
-adobe premier,1
-rm idocs,1
-osisoft,1
-Machine Learning,121
-sass,1
-eplan,1
-tipping point,1
-Routing,8
-debian,2
-struts,1
-cirbe,52
-microsoft exchange,55
-sonar,2
-suite adobe,1
-prince 2,1
-banca,52
-vlovity,1
-sdlc,2
-lua,1
-proxys,1
-oracle e business suite,1
-red hat,55
-electronica,13
-dynamics 365,62
-SAP Business One,3
-consultoria it,1
-ssh,1
-razor,6
-crisc,1
-sonycwall,1
-psql,1
-rac,7
-aruba,4
-scib,52
-emc,1
-ibm,52
-nema,1
-anfes,1
-Swift,540
-3d,4
-Hadoop,4
-i+d,4
-SA FICO,7
-SAP IBP,1
-cissm,1
-lowcode,1
-yocto,1
-sbm,1
-siem,12
-Postman,159
-guardium,52
-firewalls,1
-instagram,1
-itsm,105
-Bootstrap,157
-etap,2
-vulnerability analysis,1
-edc,53
-social media,2
-tfs,7
-aix,1
-project,1
-rman,6
-avaya,1
-COBOL,595
-mpls,1
-JQuery,106
-SailPoint,104
-was,3
-recruitment,1
-JavaScript,2136
-eventhubs,1
-siemens,10
-exchange 365,1
-SAN/NAS,6
-blazor,1
-testlink,4
-scss,2
-cissp,5
-ofimática,1
-hp rmc,1
-vlan,1
-ipam,1
-SAP IS-U,53
-research,1
-hellix,1
-robótica industrial,1
-frances,2
-rhel,3
-usd,52
-microsoft ax,1
-SpringBoot,1678
-android tv,1
-Kotlin,288
-Testing,1111
-silk,3
-tier1,1
-dataguard,1
-control de riesgos,1
-slm,1
-indesign,2
-call manager,1
-oracle soa,1
-targetlink,1
-Pandas,55
-citrix,5
-ccna,5
-yaml,56
-soc,2
-datos,1
-meraki,1
-génesys,1
-DevOps,272
-backup,54
-SA FI,11
-powerapps,53
-arquitecturahexagonal,52
-canopen,1
-PHP,1239
-software,20
-experian,52
-Google Big Query,109
-proxmox,1
-kam,1
-SOLID,52
-c# visual basic,1
-backend,1
-genesys suite,1
-vb,1
-aspice,53
-t sql,54
-systems deployments,1
-CiberSeguridad,727
-J2EE,607
-crystal reports,1
-fcas,1
-rexx,1
-iso,5
-http,1
-.Net Core,287
-jd edwards,4
-ngws,1
-phishing,1
-peoplesoft,52
-xunit,1
-simulink,6
-microsoft project,1
-Incident Management,2
-autómatas,1
-oepm,1
-gosu,2
-alm,53
-colibra,3
-openedge,52
-waf,6
-.Net,1344
-macros,1
-qlikview,1
-windows server,18
-Administración de Sistemas,2
-eclipse,2
-netreveal,4
-rdf,1
-tmb,2
-NodeJS,1058
-servicenow,113
-natural adabas,1
-jcl,114
-SAP SD,18
-infraestructura it,1
-cms,52
-dynamics ax,6
-rust,1
-autosar,9
-data center,1
-woocomerce,52
-im,1
-sem,62
-Scala,169
-terraform,167
-shopify,108
-Salesforce Marketing Cloud,2
-sparql,1
-adas,2
-itom,57
-natural,52
-lamp,108
-elastic search,1
-Azure,840
-active,1
-prototype,1
-pruebas,52
-pmbok,1
-clickview,1
-informática,1
-ppc,5
-cassandra,1
-hfc,1
-json,2
-ad,56
-vcenter,3
-spring batch,53
-servidores,2
-SAP BW,2
-Microsoft Access,5
-oracle tuxedo,1
-viewmodel,2
-iis,1
-Ingeniería Industrial,8
-power automate,1
-cyber security,1
-Lean,1000
-maven,2
-edr,5
-swagger,53
-Tableau,59
-libreoffice,52
-IOS,749
-3gpp,2
-radionavegación,1
-MySQL,335
-ibm mq,1
-emar,1
-growth,1
-Sage ERP,2
-ot,1
-proxy,1
-as400,53
-sistemas operativos,1
-diseño gráfico,1
-led,1
-pmp,81
-mantis,52
-azure sql,52
-gnss,3
-katalon,1
-DataBricks,2
-Scrum,593
-jasper reports,1
-hook,5
-zoho crm,1
-SAP BW/4HANA,1
-red team,1
-crm,58
-gmao,2
-rdfs/owl,1
-quasar,52
-goldengate,5
-Next.js,1
-gis,3
-conan,1
-ubuntu,3
-cake,1
-log,1
-prince,3
-field service,1
-apache,2
-Data Governance,57
-bpo it,1
-robótica,4
-visual studio,8
-forms,2
-mes,6
-neo4j,1
-arquitectura hexagogonal,52
-sat,1
-PowerShell,113
-inventor,3
-aks,1
-hewlett packard enterprise,1
-canbus,1
-SA CO,61
-google earth,1
-azure service bus,52
-radio,2
-on premise,1
-SaaS,3
-JPA,111
-linux administration: centos,1
-macos,1
-mil,1
-sd wan,1
-ga,1
-it procurement,1
-azure devops,55
-contabilidad,1
-premiere,1
-aiv,1
-uas/uav,1
-clean code,104
-Scripting,53
-data services,3
-mac os,1
-nfs,2
-stm,1
-SAP VISTEX,1
-adobe,3
-rancher,2
-iaas,2
-alfresco,52
-weblogic,55
-tls,1
-electron,52
-nist,2
-ga4,2
-satellite,1
-maquetado,2
-wic,1
-openstack,52
-Ruby on Rails,54
-orcad,1
-spring data,52
-enterprise vault,52
-csx,1
-remedy,2
-ExpressJS,55
-search ads 360,1
-project management,108
-hids,1
-continuous improvement,1
-blueprism,52
-sistemas,2
-GCP,67
-adabas,105
-ids,1
-tag manager,52
-ajax,4
-virtualización,2
-telecomunicación,1
-API SOAP,7
-jasmine,1
-semrush,2
-mgd,52
-systems,1
-adobe xd,1
-dynamics fo,3
-mrp,1
-gerrit,2
-aso,52
-suse,1
-Inglés,105
-pentesting,1
-jetpack,1
-kanban,58
-checkpoint,104
-videojuegos,1
-PostgreSQL,10
-wintel,1
-Confluence,217
-criptografía,2
-cadence,1
-web,1
-isms,1
-mikrotik,2
-npl,1
-eplan electric p8,1
-m3,2
-qgis,2
-proposal writing,1
-sil,1
-sas,2
 tcp/ip,54
-mecatrónica,2
-jboss,5
-asterisk,1
-bash,157
-sistemas biométricos,1
-snow,52
-zero code,52
-power apps,2
-i2c,1
-Oracle,1103
-Blockchain,105
-Go,9
-delphi,4
-ISO 9001,1
-juniper,5
-community manager,1
-camt,1
-PrestaShop,162
-solaris,52
-tensorflow,1
-voip,1
-trello,2
-luw,52
-IBM DB2,226
-navision,81
-matplotlib,3
-paas,1
-xray,1
-step 7,1
-oracle bi,52
-wasp,2
-robotmachine,1
-puppet,2
-karma,1
-batch,3
-gpo,2
-transact sql,1
-fullstack,1
-hubspot,6
-c# net,2
-gradle,1
-SAP PM,55
-zendesk,2
-board,1
-mvc,18
-Microinformática,23
-ml,52
-qlik,6
-azure ad,54
-core,2
-DJango,110
-hl7,2
-lamda,52
-gtm,1
-dynamics navision,1
-ftth,2
-directorio activo,56
-ISO 27001,57
-pi system,1
-cad,3
-SalesForce,169
-genesys,2
-z/os,3
-office,74
-mapex,1
-kafka,108
-business central,70
-sugar,52
-hp alm,1
-qlik sense,2
-sisnet,52
-analyst,1
-netapp,52
-as/400,4
-Data Analytics,7
-C#,751
-SAP ABAP,229
-entity framework,1
-uml,105
-SAP PS,1
-graficos,1
-wp,53
-API,593
-cisco unity,1
-ensamblador,1
-wireshark,1
-teldat,1
-project manager,75
-winforms,1
-PowerBI,66
-qualys,1
-Docker,115
-Microsoft Word,2
-exadata,1
-nlp,1
-graphql,2
-biztalk,52
-SQL Server,414
-modellica,52
-adobe analytics,2
-dhcp,2
-pros,1
-red hat pacemaker,52
-implementacion,52
-pam,1
-almacenamiento,2
-data factory,52
-gestion energetica,52
 Data Studio,4
-devsecops,54
-automatismos,2
-nav,1
-idq,52
-Laravel,440
-soporte,130
-sketch,2
-Microsoft 365,34
-Selenium,382
-desarrollo de producto,1
-cpm,1
-fiori,2
-business intelligence,3
-Jenkins,267
-R,177
-jest,9
-indesing,1
-f5,55
-shell script,5
-Microsoft Excel,26
-5g,11
-ISO 22301,1
-cert,2
-Flutter,114
-hmis,1
-it strategy,1
-producto owner,1
-norkom,57
-mparticle,1
-gitlab,2
-temenos,1
-SAP Retail,6
-Jira,600
-vlocity,52
-dora,1
-esri,53
-wan,12
-gestión,4
-ivr,1
-codeingniter,1
-Objective-C,315
-CSS,657
-primefaces,52
-mt940,1
-React Native,4
-Java Swing,6
-cakephp,1
-halcon,1
-.Net Visual Basic,56
-ssl,1
-banca electrónica,1
-cisa,6
-Python,1441
-marketing,57
-ui,1
-microelectrónica,1
-twig,1
-odoo,2
-controlm,1
-Adobe After Effects,1
-veeam backup,1
-helix bmc,1
-ran,1
-rest api,2
-veritas backup,52
-x rays,1
-vpn,58
-powercenter,105
-SAP SuccessFactors,1
-energy components,104
-horizon,1
-creativity,1
-SAP,852
-electromecánicos,1
-d2d,1
-C,119
-mailchimp,1
-pmi,1
-rfq,1
-cordova,52
-SCADA,1
-intune,4
-SAP S/4HANA,168
-async,1
-.Net Framework,53
-datahubs,104
-magento,58
-ssis,2
-commvault,2
-matlab,10
-react vuejs,52
+eplan,1
+mrp,1
+as400,53
 solidedge,1
-microfocus,52
-hyper v,53
-goal,1
-pegasus,52
-pl1,52
-web api,6
-mockito,1
-google tag manager,54
-host,52
-redes sociales,1
-cnc,1
-kaizen,2
-tekla,1
+dora,1
+alarmas,1
+ISO 9001,1
+selenide,1
+power automate,1
 cro,1
-ericsson,11
-jefe de equipo,2
-Git,236
-powerbuilder,53
-autocad,29
-svn,58
-React,1955
-Spring,1779
-Hibernate,222
-BBDD,106
-Visual Basic,59
-Soap UI,53
-ecmascript,1
-cognito,52
-rtus,1
-open api,2
-Aeronáutica,57
-d3jhs,1
-ddi,1
-SAP PSCD,52
-cypress,56
-ctm,1
-revit,7
-iot,4
-mlflow,1
-wt directory,1
-PyTest,52
-gitflow,1
-Nest.js,1
-miro,1
-proyectos it,1
-huawei,5
-par.,1
-mt942,1
-apx,52
-pick place,1
-hbase,52
-frontend,1
-Microsoft Power Pivot,1
-business objects,1
-milestone,1
-sccm,7
-its,1
-intercom,1
-TypeScript,711
-sistemas embebidos,2
-tiktok,1
-erp,56
-inteligencia artificial,8
-SA FICA,52
-big data,3
-qt,55
-Web Services,106
+siemens,10
 anaconda,2
-oracle weblogic,52
-axway,52
-storage,52
-oracle primavera unifier,52
-point,1
-entity,52
-datastage,1
-cctv,1
-fortinet,111
-maintenance,1
-dax,1
-SSAS,1
-electronic,1
-outsourcing,1
-microstrategy,60
-omnistudio,52
-smallworld,1
-tic,3
-wimax,1
-VueJS,708
-GitHub,2
-white rabbit,1
-2d,1
-Agile,1276
-Microsoft Power BI,238
-spring cloud,5
 Tecnología de la Información,416
+tipping point,1
+ISO 27001,57
+Shopify,108
+point,1
+genesys suite,1
+project management,108
+nat,1
+Progress,105
+gmao,2
+firewalls,1
+powertrain,1
+project,1
+SAP PS,1
+scib,52
+react vuejs,52
+ui,1
+SAP Retail,6
+sem,62
+imap,1
+http,1
+checkpoint,104
 dataflow,1
-Google AdWords,6
-mqfte,1
-networking,54
-tibco,2
-fgc,2
-jetpack compose,52
-mecánica,1
-rpgle,1
-apple bussiness manager,1
-ccnp,2
-iscsi,2
-industria,1
-x86,1
-exchange,57
-sepa,156
-documentum,52
-automation,4
-hacking,1
-entornos linux windows,1
-calidad,71
-data,232
-gestion proyectos,1
-xenapp,1
-tia portal,1
-android estudio,1
-hpalm,1
-udb,52
-dba,110
-atlassian,53
-pentaho,1
-dns,58
-ux,58
-malware,4
+DevOps,272
+hbase,52
+SQL,900
+rpgsqle,1
+pegasus,52
+ipam,1
+galileo,1
+log,1
+rrss,2
+amdocs,52
+spi,1
+mockito,1
+Data Lake,262
+SA FICO,7
+CSS,657
+modellica,52
+SailPoint,104
+Kubernetes,440
+C#,751
+energia,2
+Blockchain,105
+apex,3
+analizadores de espectro,1
+Jira,600
+business central,70
+VBA,1
+ecommerce,11
+hmis,1
+Hive,53
+.Net Framework,53
+arquitectura hexagogonal,52
+wifi,2
+Administración de Sistemas,2
+sisnet,52
+Pandas,55
+intercom,1
+vbasic,1
+HTML,491
+yocto,1
+guardium,52
+grafana,52
+adobe,3
+API SOAP,7
+Cloud,501
+adabas,105
+rm idocs,1
+par.,1
+gitflow,1
+emset,1
+tizen,1
+temenos,1
+qlikview,1
+Aeronáutica,57
+PowerBI,66
+gerrit,2
+fpga,3
+vpn,58
+4g,10
+tier1,1
+fhir,1
+ga4,2
+SAP VISTEX,1
+red hat pacemaker,52
+ciberseguidad,1
+osisoft,1
 ctms,1
-.Net ASP CORE,1
-gps,1
-six sigma,6
+revit,7
+gtm,1
+time,1
+electromecánicos,1
+psql,1
+magento,58
+VueJS,708
+Google Data Studio,52
+silk,3
+jmeter,52
+nexus,53
+mt942,1
+pcbs,1
+gnss,3
+integrador it,1
+search ads 360,1
+opengate,1
+Azure Functions,52
+alfresco,52
+meraki,1
+led,1
+ids,1
+jcl,114
+sdlc,2
+ionic,52
+kenshoo,1
+Tableau,59
+ketch,1
+pentesting,1
+desarrollo de producto,1
+SAP PSCD,52
+analysis,53
+ran,1
+ssh,1
+x rays,1
+pantallas led,1
+Docker,115
+xdr,1
+open api,2
+json,2
+navision,81
+red hat,55
+veritas backup,52
+active,1
+powerbuilder,53
+openshift,61
+nagios,54
+phishing,1
+middleware,5
+microfocus,52
+uwp,53
+ip,55
+goldengate,5
+smallworld,1
+hewlett packard enterprise,1
+jetpack compose,52
+entity,52
+Machine Learning,121
+proxy,1
+wic,1
+aml/pbc,52
+cissm,1
+JSF,210
+shell script,5
+SAP BO,1
+exchange 365,1
+gis,3
+Scrum,593
+ajax,4
+gestion energetica,52
+experian,52
+hids,1
+Adobe After Effects,1
+dhcp,2
+white rabbit,1
+pmbok,1
+ctm,1
+rust,1
+openedge,52
+API,593
+alm,53
+documentum,52
+SAP SD,18
+codeingniter,1
+cpm,1
+altium,5
+board,1
+power apps,2
+hubspot,6
+Azure SQL,52
+airflow,3
+cisa,6
+ad,56
+energy components,104
+indesing,1
+siem,12
+SAP IBP,1
+telco,5
+microelectrónica,1
+datastage,1
+implementacion,52
+ibm mq,1
+hp alm,1
+smed,1
+Incident Management,2
+kafka,108
+c# visual basic,1
+jboss,5
+sil,1
+comercial,1
+wireshark,1
+telecomunicación,1
+Switching,8
+sst,1
+oracle soa,1
+SA CO,61
+jest,9
+mecánica,1
+web,1
+lan,69
+pmo,108
+nids,1
+wt directory,1
+data factory,52
+hp rmc,1
+macros,1
+tensorflow,1
+refx,1
+tfs,7
+ia,1
 axon,2
-cucumber,56
-ldap,157
-websphere,2
-virtualizacion,1
-data link,1
+cassandra,1
+adobe analytics,2
+React Native,4
+SEO,72
+windows server,18
+osi,1
+qradar,52
+karma,1
+cti,52
+3d,4
+ntp,1
+sketch,2
+firebase,52
+goal,1
