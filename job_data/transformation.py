@@ -1,6 +1,5 @@
 import re
 import pandas as pd
-from typing import List
 
 from pandas import Timestamp
 
@@ -23,7 +22,7 @@ def add_separate_description(value: str) -> str:
     return re.sub(pattern=REGEX_SEPARATE_DESCRIPTION, string=value)
 
 
-def add_list_technologies(value: str) -> List[str]:
+def add_list_technologies(value: str) -> list[str]:
     return value.split(SEPARATE_TECHNOLOGIES)
 
 
