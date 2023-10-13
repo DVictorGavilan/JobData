@@ -55,3 +55,5 @@ pandas.DataFrame({'Technology': count_values.keys(), 'Count': count_values.value
 # 1059
 # 1056
 # 1042
+# 1014
+#  985
