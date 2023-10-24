@@ -31,4 +31,4 @@ print(data_job.apply(quality.df_is_empty))
 print("Validación para 'aux_date':")
 # for fecha in data_job['aux_date']:
 #     print(f"{fecha} : {quality.validar_fecha(fecha)}")
-print(data_job['aux_date'].apply(quality.validar_fecha))
+print(quality.validar_fecha(data_job, 'aux_date'))

@@ -1,5 +1,6 @@
 import re
 import pandas as pd
+from pandas import Series
 from typing import List
 
 DATE_FORMAT = '%d/%m/%Y'
@@ -7,7 +8,7 @@ SEPARATE_TECHNOLOGIES = ' - '
 REGEX_EXTRACT_AMOUNT = r'(\d+(\.\d{3})*\€(?:\s*-\s*\d+(\.\d{3})*\€)?)|(\d+(\.\d{3})*\€)'
 REGEX_MODALIDAD = r'(presencial|hibrido|híbrido|remoto)'
 
-def add_date(value: str) -> str:
+def add_date(value: Series) -> Series:
     value = value.strip()
     value = pd.to_datetime(value[:10], format=DATE_FORMAT)
     return value

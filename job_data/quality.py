@@ -10,10 +10,13 @@ def check_nulls(df: DataFrame, columna: str) -> bool:
 def df_is_empty(df: DataFrame) -> bool:
     return df.empty
 
-def validar_fecha(fecha: Timestamp) -> str:
-    if pd.isna(fecha):
-        return "Valor faltante (NaN)"
-    elif isinstance(fecha, Timestamp):
-        return "Cumple con el formato YYYY-MM-DD"
-    else:
-        return "No cumple con el formato requerido"
+def validar_fecha(df: DataFrame, nombre_de_campo: str) -> str:
+    values = df[nombre_de_campo]
+    
+    if values.isnull().all():
+        return 'KO'
+    
+    if all(isinstance(value, Timestamp) for value in values):
+        return 'OK'
+    
+    return 'KO'
