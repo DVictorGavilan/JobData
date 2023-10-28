@@ -1,0 +1,5 @@
+Check nulls:
+ - Column not in columns => Error el no se encuentra en el dataframe
+ - Column is not type str => Error el nombre_de_campo no es str
+ - Si hay un nulo => KO
+ - Si no hay nulos => OK
