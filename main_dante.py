@@ -26,12 +26,12 @@ print('Validar los sueldos (float)')
 print(quality.check_type(data_job, 'aux_salary_min',float))
 print(quality.check_type(data_job, 'aux_salary_min',float))
 
-# '''Extraer las modalidades de trabajo'''
-# data_job['aux_modalidad'] = data_job['descripcion'].apply(transformation.extract_modality)
-# print(data_job['aux_modalidad'].head(25))
+'''Extraer las modalidades de trabajo'''
+data_job['aux_modalidad'] = data_job['descripcion'].apply(transformation.extract_modality)
+print(data_job['aux_modalidad'].head(25))
 
-# '''Check is empty'''
-# print(data_job.apply(quality.df_is_empty))
+'''Check is empty'''
+print(data_job.apply(quality.df_is_empty))
 
 print("Validación para 'aux_date':")
 print(quality.check_type(data_job,'aux_date',datetime))
