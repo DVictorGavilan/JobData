@@ -20,7 +20,7 @@ def df_is_empty(df: DataFrame) -> bool:
 def check_type(df, column_name, data_type) -> str:
     # Verificar si la columna existe en el DataFrame
     if column_name not in df.columns:
-        return f'Error: La columna "{column_name}" no se encuentra en el DataFrame'
+        raise ValueError(f'Error: La columna "{column_name}" no se encuentra en el DataFrame')
 
     # Filtrar los registros donde el valor no es nulo
     filtered_values = df[df[column_name].notnull()]
@@ -29,4 +29,4 @@ def check_type(df, column_name, data_type) -> str:
     if filtered_values[column_name].apply(lambda x: isinstance(x, data_type)).all():
         return 'OK: Todos los registros son del tipo especificado'
     else:
-        return 'KO: Al menos un registro no es del tipo especificado'
+        raise ValueError('KO: Al menos un registro no es del tipo especificado')
