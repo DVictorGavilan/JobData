@@ -3,6 +3,7 @@ import pandas as pd
 from pandas import DataFrame
 from job_data import quality
 
+
 class TestQuality(unittest.TestCase):
 
     def setUp(self):
@@ -59,6 +60,7 @@ class TestQuality(unittest.TestCase):
         with self.assertRaises(ValueError) as cm:
             quality.check_type(self.df, 'columna_mezclada', int)
         self.assertEqual(str(cm.exception), 'KO: Al menos un registro no es del tipo especificado')
+
 
 if __name__ == '__main__':
     unittest.main()
