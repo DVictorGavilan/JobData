@@ -8,6 +8,7 @@ setup(
         'pandas',
         'requests',
         'beautifulsoup4'
+        "essentialkit"
     ],
     entry_points={
         'console_scripts': [

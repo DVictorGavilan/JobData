@@ -1,21 +1,26 @@
 from datetime import date
 from pandas import DataFrame
-from job_data import scrapy, utils, pipeline
+from essentialkit import file_operations
+from job_data.tecnoempleo import scraper
 
 
 def main():
     cutoff_date: date = date.today()
-    path_provincias_info: str = 'config/provincias_info.json'
-    path_provincias_data: str = f'data/provincias_info_{cutoff_date}.csv'
-    path_jobs_data: str       = f'data/empleos_info_{cutoff_date}.csv'
+    path_cities_info = 'config/tecnoempleo/cities_info.json'
+    path_cities_data = f'data/raw/cities_data_{cutoff_date}.csv'
+    path_job_data = f'data/raw/job_data_{cutoff_date}.csv'
 
-    provincias_info: dict = utils.read_json(path=path_provincias_info)
+    cities_info = file_operations.read_json(path=path_cities_info)
 
-    provincias_data: DataFrame = scrapy.download_provincias_data(provincias_info)
-    jobs_data: DataFrame       = scrapy.download_jobs_data(provincias_info)
+    city = scraper.download_cities_data(cities_info)
+    cities_data: DataFrame = DataFrame(city)
+    job_data: DataFrame = DataFrame(scraper.download_job_data(city))
 
-    pipeline.processing_provincias_info(provincias_data).to_csv(path_provincias_data, index=False, sep=';')
-    pipeline.processing_job_data(jobs_data).to_csv(path_jobs_data, index=False, sep=';')
+    cities_data.to_csv(path_cities_data, index=False, sep=";")
+    job_data.to_csv(path_job_data, index=False, sep=";")
+
+    # pipeline.processing_cities_info(cities_data).to_csv(path_cities_data, index=False, sep=';')
+    # pipeline.processing_job_data(job_data).to_csv(path_jobs_data, index=False, sep=';')
 
 
 if __name__ == '__main__':

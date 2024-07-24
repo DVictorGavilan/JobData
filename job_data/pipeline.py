@@ -7,7 +7,7 @@ def processing_job_data(job_data: DataFrame) -> DataFrame:
     # normalized_technologies_name = utils.read_json('config/normalized_names.json')
     quality.check_nulls(job_data, 'nombre_empleo')
     quality.check_nulls(job_data, 'empresa')
-    quality.check_nulls(job_data, 'provincia')
+    quality.check_nulls(job_data, 'city')
     quality.check_nulls(job_data, 'tecnologias')
     quality.check_nulls(job_data, 'descripcion')
     quality.check_nulls(job_data, 'url')
@@ -24,8 +24,8 @@ def processing_job_data(job_data: DataFrame) -> DataFrame:
     return job_data
 
 
-def processing_provincias_info(provincias_info: DataFrame) -> DataFrame:
-    quality.check_nulls(provincias_info, 'id_provincia')
-    quality.check_nulls(provincias_info, 'provincia')
-    quality.check_nulls(provincias_info, 'num_ofertas')
-    return provincias_info
+def processing_cities_info(cities_info: DataFrame) -> DataFrame:
+    quality.check_nulls(cities_info, 'id_city')
+    quality.check_nulls(cities_info, 'city')
+    quality.check_nulls(cities_info, 'num_ofertas')
+    return cities_info
