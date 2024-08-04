@@ -58,8 +58,8 @@ def get_job_divs(soup: BeautifulSoup) -> ResultSet[Tag]:
 def get_job_name(job_div: Tag) -> str:
     """
     Extracts the job name from a div in Tecnoempleo web.
-    :param job_div: A BeautifulSoup object representing the parsed div content in
-    Tecnoempleo web.
+    :param job_div: A BeautifulSoup object representing the parsed div content
+    in Tecnoempleo web.
     :return: The job name.
     """
     job_name_tag: dict = catalog_tag.JOB_NAME
@@ -72,8 +72,8 @@ def get_job_name(job_div: Tag) -> str:
 def get_job_url(job_div: Tag) -> str:
     """
     Extracts the job url  from a div in Tecnoempleo web.
-    :param job_div: A BeautifulSoup object representing the parsed div content in
-    Tecnoempleo web.
+    :param job_div: A BeautifulSoup object representing the parsed div content
+    in Tecnoempleo web.
     :return: The job url.
     """
     job_url_tag: dict = catalog_tag.JOB_URL
@@ -86,8 +86,8 @@ def get_job_url(job_div: Tag) -> str:
 def get_job_company(job_div: Tag) -> str:
     """
     Extracts the job company  from a div in Tecnoempleo web.
-    :param job_div: A BeautifulSoup object representing the parsed div content in
-    Tecnoempleo web.
+    :param job_div: A BeautifulSoup object representing the parsed div content
+    in Tecnoempleo web.
     :return: The job company.
     """
     job_company_tag: dict = catalog_tag.JOB_COMPANY
@@ -100,8 +100,8 @@ def get_job_company(job_div: Tag) -> str:
 def get_job_technologies_stack(job_div: Tag) -> list[str]:
     """
     Extracts the job technologies required from a div in Tecnoempleo web.
-    :param job_div: A BeautifulSoup object representing the parsed div content in
-    Tecnoempleo web.
+    :param job_div: A BeautifulSoup object representing the parsed div content
+    in Tecnoempleo web.
     :return: A technologies stack list.
     """
     job_technologies_stack_tag: dict = catalog_tag.JOB_TECHNOLOGIES_STACK
@@ -114,8 +114,8 @@ def get_job_technologies_stack(job_div: Tag) -> list[str]:
 def get_job_description(job_div: Tag) -> str:
     """
     Extracts the job description from a div in Tecnoempleo web.
-    :param job_div: A BeautifulSoup object representing the parsed div content in
-    Tecnoempleo web.
+    :param job_div: A BeautifulSoup object representing the parsed div content
+    in Tecnoempleo web.
     :return: The job description.
     """
     job_description_tag: dict = catalog_tag.JOB_DESCRIPTION
@@ -128,8 +128,8 @@ def get_job_description(job_div: Tag) -> str:
 def get_job_other_info(job_div: Tag) -> str:
     """
     Extracts the job 'other' info from a div in Tecnoempleo web.
-    :param job_div: A BeautifulSoup object representing the parsed div content in
-    Tecnoempleo web.
+    :param job_div: A BeautifulSoup object representing the parsed div content
+    in Tecnoempleo web.
     :return: The job 'other' info.
     """
     job_description_tag: dict = catalog_tag.JOB_OTHER_DATA
@@ -148,8 +148,8 @@ def extract_job_data(job_div: Tag) -> dict:
         - job technologies stack
         - job description
         - job other info
-    :param job_div: A BeautifulSoup object representing the parsed div content in
-    Tecnoempleo web.
+    :param job_div: A BeautifulSoup object representing the parsed div content
+    in Tecnoempleo web.
     :return: Job information data as a dict.
     """
     return {
@@ -201,7 +201,8 @@ def download_job_data() -> list[dict]:
     """
     Downloads job data from a series of Tecnoempleo pages. Generate a URL
     for each page and extracts relevant information from each job.
-    :return: A list of dictionaries, each containing data for a single job listing
+    :return: A list of dictionaries, each containing data for a single
+    job listing
     """
     job_data = []
     url: str = utils.generate_base_url()
