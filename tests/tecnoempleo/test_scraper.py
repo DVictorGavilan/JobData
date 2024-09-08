@@ -9,10 +9,9 @@ HTML_CONTENT = """
             <title>Job Listings</title>
         </head>
         <body>
-            <h1 class='h4 h6-xs text-center my-4'>1.430 Example City Data, Page 18</h1>
+            <h1 class='h4 h6-xs text-center my-4'>50 Example City Data, Page 18</h1>
             <div class='p-3 border rounded mb-3 bg-white'>
-                <h3 class='fs-5 mb-2'>Job Test 1</h3>
-                <a class='font-weight-bold text-cyan-700' href='http://www.test1.com'></a>
+                <a class='font-weight-bold text-cyan-700' href='http://www.test1.com' title='Job Test 1'></a>
                 <a class='text-primary'>Company Test 1</a>
                 <span class='badge bg-gray-500 mx-1'>Python</span>
                 <span class='badge bg-gray-500 mx-1'>Java</span>
@@ -20,8 +19,7 @@ HTML_CONTENT = """
                 <div class='col-12 col-lg-3 text-gray-700 pt-2 text-right hidden-md-down'>Other Info 1</div>
             </div>
             <div class='p-3 border rounded mb-3 bg-white'>
-                <h3 class='fs-5 mb-2'>Job Test 2</h3>
-                <a class='font-weight-bold text-cyan-700' href='http://www.test2.com'></a>
+                <a class='font-weight-bold text-cyan-700' href='http://www.test2.com' title='Job Test 2'></a>
                 <a class='text-primary'>Company Test 2</a>
                 <span class='badge bg-gray-500 mx-1'>Scala</span>
                 <span class='badge bg-gray-500 mx-1'>PHP</span>
@@ -33,7 +31,6 @@ HTML_CONTENT = """
 """
 MOCK_SOUP = BeautifulSoup(markup=HTML_CONTENT, features="html.parser")
 
-HTML_EMPTY = ""
 MOCK_EMPTY_SOUP = BeautifulSoup(markup="", features="html.parser")
 
 
@@ -44,7 +41,7 @@ def test_successful_connection(mock_get):
     mock_get.return_value = mock_response
     soup = get_html(url=url)
     assert_that(soup).is_instance_of(BeautifulSoup)
-    assert_that(soup.find("h1").text).is_equal_to("1.430 Example City Data, Page 18")
+    assert_that(soup.find("h1").text).is_equal_to("50 Example City Data, Page 18")
 
 
 @patch("job_data.tecnoempleo.scraper.requests.get")
@@ -55,7 +52,7 @@ def test_unsuccessful_connection(mock_get):
 
 
 def test_getting_total_jobs():
-    assert_that(get_total_jobs(MOCK_SOUP)).is_equal_to(1430)
+    assert_that(get_total_jobs(MOCK_SOUP)).is_equal_to(50)
 
 
 def test_getting_total_jobs_tag_not_found():
@@ -79,7 +76,7 @@ def test_get_job_name_successful():
 
 
 def test_get_job_name_unsuccessful():
-    msg_error = "{'name': 'h3', 'class': {'class': 'fs-5 mb-2'}}"
+    msg_error = "{'name': 'a', 'class': {'class': 'font-weight-bold text-cyan-700'}}"
     assert_that(get_job_name).raises(ElementNotFound).when_called_with(MOCK_EMPTY_SOUP).is_equal_to(msg_error)
 
 
@@ -148,29 +145,7 @@ def test_extract_job_data_successfully():
 
 
 @patch("job_data.tecnoempleo.scraper.get_html")
-def test_generate_city_data_successfully(mock_get_html):
-    expected = {"id": "1", "name": "city_1", "total_num_of_jobs": 1430, "total_num_of_pages": range(1, 49)}
-    mock_get_html.return_value = MOCK_SOUP
-    assert_that(generate_city_data(city_id="1", city_name="city_1")).is_equal_to(expected)
-
-
-@patch("job_data.tecnoempleo.scraper.get_html")
-def test_download_cities_data_successfully(mock_get_html):
-    cities_data = [{"id": "1", "name": "city_1"}, {"id": "2", "name": "city_2"}]
-    expected = [
-        {"id": "1", "name": "city_1", "total_num_of_jobs": 1430, "total_num_of_pages": range(1, 49)},
-        {"id": "2", "name": "city_2", "total_num_of_jobs": 1430, "total_num_of_pages": range(1, 49)}
-    ]
-    mock_get_html.return_value = MOCK_SOUP
-    assert_that(download_cities_data(cities_info=cities_data)).is_equal_to(expected)
-
-
-@patch("job_data.tecnoempleo.scraper.get_html")
 def test_download_job_data_successfully(mock_get_html):
-    cities_data = [
-        {"id": "1", "name": "city_1", "total_num_of_jobs": 5, "total_num_of_pages": range(1, 2)},
-        {"id": "2", "name": "city_2", "total_num_of_jobs": 5, "total_num_of_pages": range(1, 2)}
-    ]
     expected = [
         {
             "job_url": "http://www.test1.com",
@@ -178,8 +153,7 @@ def test_download_job_data_successfully(mock_get_html):
             "job_company": "Company Test 1",
             "job_technologies_stack": ["Python", "Java"],
             "job_description": "Description Test 1",
-            "job_other_info": "Other Info 1",
-            "job_city": "city_1"
+            "job_other_info": "Other Info 1"
         },
         {
             "job_url": "http://www.test2.com",
@@ -187,8 +161,7 @@ def test_download_job_data_successfully(mock_get_html):
             "job_company": "Company Test 2",
             "job_technologies_stack": ["Scala", "PHP"],
             "job_description": "Description Test 2",
-            "job_other_info": "Other Info 2",
-            "job_city": "city_1"
+            "job_other_info": "Other Info 2"
         },
         {
             "job_url": "http://www.test1.com",
@@ -196,8 +169,7 @@ def test_download_job_data_successfully(mock_get_html):
             "job_company": "Company Test 1",
             "job_technologies_stack": ["Python", "Java"],
             "job_description": "Description Test 1",
-            "job_other_info": "Other Info 1",
-            "job_city": "city_2"
+            "job_other_info": "Other Info 1"
         },
         {
             "job_url": "http://www.test2.com",
@@ -205,9 +177,8 @@ def test_download_job_data_successfully(mock_get_html):
             "job_company": "Company Test 2",
             "job_technologies_stack": ["Scala", "PHP"],
             "job_description": "Description Test 2",
-            "job_other_info": "Other Info 2",
-            "job_city": "city_2"
-        },
+            "job_other_info": "Other Info 2"
+        }
     ]
     mock_get_html.return_value = MOCK_SOUP
-    assert_that(download_job_data(cities_info=cities_data)).is_equal_to(expected)
+    assert_that(download_job_data()).is_equal_to(expected)
