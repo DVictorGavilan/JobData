@@ -27,7 +27,7 @@ def transform(job_data_raw: DataFrame) -> DataFrame:
 def load(cutoff_date: date, job_data: DataFrame, zone: str) -> None:
     path_job_data = f"data/{zone}/tecnoempleo/data/job_data_{cutoff_date}.csv"
     logger.info(f"Saving data in {path_job_data}")
-    job_data.to_csv(path_job_data, index=False, sep=";")
+    job_data.to_csv(path_job_data, index=False, sep=",")
 
 
 def etl(cutoff_date: date) -> None:

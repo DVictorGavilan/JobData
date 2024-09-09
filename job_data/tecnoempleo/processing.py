@@ -16,8 +16,9 @@ def normalized_job_description_column(data: DataFrame) -> DataFrame:
     :param data: DataFrame containing a column `job_description` as string data
     :return: The modified DataFrame where tab and newline characters are removed.
     """
-    data["job_description"] = data["job_description"].str.replace(pat="\t", repl="")
+    data["job_description"] = data["job_description"].str.replace(pat="\r", repl="")
     data["job_description"] = data["job_description"].str.replace(pat="\n", repl="")
+    data["job_description"] = data["job_description"].str.replace(pat="\t", repl="")
     return data
 
 
