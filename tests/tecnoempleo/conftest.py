@@ -6,9 +6,8 @@ from datetime import datetime
 from job_data.tecnoempleo.processing import transformations
 
 
-
 @pytest.fixture
-def raw_data():
+def mock_raw_data():
     return DataFrame({
         "job_url": ["http://www.test1.com", "http://www.test2.com"],
         "job_name": ["Job Test 1", "Job Test 2"],
@@ -20,7 +19,7 @@ def raw_data():
 
 
 @pytest.fixture
-def master_expected_data():
+def mock_master_expected_data():
     return DataFrame({
         "job_url": ["http://www.test1.com", "http://www.test2.com"],
         "job_name": ["Job Test 1", "Job Test 2"],
@@ -38,5 +37,5 @@ def master_expected_data():
 
 
 @pytest.fixture
-def master_actual_data(raw_data):
-    return transformations(raw_data)
+def mock_master_actual_data(mock_raw_data):
+    return transformations(mock_raw_data)
