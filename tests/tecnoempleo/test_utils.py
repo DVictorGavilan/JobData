@@ -1,4 +1,3 @@
-from itertools import count
 from assertpy import assert_that
 from job_data.tecnoempleo.utils import *
 
