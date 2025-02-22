@@ -7,6 +7,7 @@ from essentialkit import file_operations
 
 logger = logging.getLogger(__name__)
 
+
 def setup_logging():
     config_logging = file_operations.read_json("config/log_configuration.json")
     logging.config.dictConfig(config_logging)
