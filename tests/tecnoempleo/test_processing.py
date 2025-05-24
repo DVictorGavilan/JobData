@@ -1,10 +1,10 @@
 from pandas.testing import assert_series_equal
 
 
-def test_get_job_description_successfully(mock_master_data, mock_master_actual_data):
+def test_get_job_description_successfully(mock_master_actual_data, mock_master_expected_data):
     assert_series_equal(
-        left=mock_master_data["job_description"],
-        right=mock_master_actual_data["job_description"]
+        left=mock_master_actual_data["job_description"],
+        right=mock_master_expected_data["job_description"]
     )
 
 
