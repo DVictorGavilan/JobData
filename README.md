@@ -26,7 +26,7 @@ For any bugs or questions, please contact [Dani Gavilán](mailto:danigavipedro96
 - **BeautifulSoup4** – HTML parsing
 - **Requests** – HTTP requests
 - **Pandas** – Data transformation and CSV export
-- **Pytest** – Unit testing framework
+- **Pytest-cov** – Unit testing framework
 - **DataQualityKit** – To ensure data quality
 
 ---
@@ -82,7 +82,7 @@ For any bugs or questions, please contact [Dani Gavilán](mailto:danigavipedro96
 5. Run tests to verify functionality:
 
 ```bash
-  pytest tests/
+  python -m pytest --cov-report html --cov .
 ```
 
 ---
@@ -116,7 +116,7 @@ https://www.tecnoempleo.com/job-name/net/rf-5fc1,Job Name ,Job Company,"['React'
   │   └── test_pipeline.py   # Unit tests for pipeline logic
   ├── main.py                # Main script
   ├── requirements.txt       # Python dependencies
-  ├── CHANGELOG.md           # Project documentation
+  ├── CHANGELOG.md           # Lists what changed in each version of the project
   └── README.md              # Project documentation
 ```
 
