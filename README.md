@@ -1,44 +1,123 @@
-# JobData
+# 📊 JobData
 
-## Functional Description
-The goal of this project is to create a Python-based system for aggregating job information from various job boards, executing an ETL (Extract, Transform, Load) process for further analysis and utilization.
+## 🚀 Project Overview
 
-## Owner
-For any bugs or questions, please reach out to [Dani Gavilán](mailto:danigavipedro96@gmail.com).
+This project is a **Python-based web scraper and ETL pipeline** designed to collect job offer data from **multiple job portals**. It is built with scalability in mind to support scraping from various employment websites. 
 
-## Branching Methodology
-This project follows a Git Flow simplified branching methodology
-- **Master Branch**: production code
-- **Develop Branch**: main integration branch for ongoing development. Features and fixes are merged into this branch before reaching master
-- **Feature Branch**: created from develop branch to work on new features
+Currently, the implementation supports:
+- **[Tecnoempleo](https://www.tecnoempleo.com)** (a leading Spanish tech job board).
 
-## Prerequisites
-This project uses:
-- Language: Python 3.10
-- Libraries: 
-  - beautifulsoup4
-  - pandas
-  - data_quality-kit
-  - pytest & pytest-cov
-  - assertpy
+It covers the full data pipeline:
 
-## How to use it
-Install dependencies and run:
+- Web scraping of job listings
+- ETL process (Extract → Transform → Load)
+- Data quality validation using custom-defined rules
+- Automated unit tests to ensure reliability and maintainability
+
+The final dataset is stored in **CSV format**, ready for data analysis or integration into business intelligence systems.
+
+For any bugs or questions, please contact [Dani Gavilán](mailto:danigavipedro96@gmail.com).
+
+---
+
+## 🛠️ Technologies Used
+
+- **Python 3**
+- **BeautifulSoup4** – HTML parsing
+- **Requests** – HTTP requests
+- **Pandas** – Data transformation and CSV export
+- **Pytest** – Unit testing framework
+- **DataQualityKit** – To ensure data quality
+
+---
+
+## 🧠 Features
+
+- Handles pagination to scrape multiple job listing pages
+- Extracts structured fields:
+  - Job URL
+  - Job Title
+  - Job Company
+  - Technologies/Skills
+  - Required Experience
+  - Posting Date
+  - Location
+  - Workplace Location
+  - Salary Lower Bound
+  - Salary Upper Bound
+- Applies **data quality checks**:
+  - No empty mandatory fields
+  - Format validation
+- Exports cleaned data to a `.csv` file
+- Includes a **test suite** to validate scraper and ETL logic
+
+---
+
+## ⚙️ How to Run
+
+1. Clone the repository:
 
 ```bash
-python main.py
+  git clone https://github.com/your-username/tecnoempleo-job-scraper.git
+  cd tecnoempleo-job-scraper
 ```
 
+2. Create a virtual environment (optional but recommended):
 
-## How it works
-### Extraction
-The script begins by performing web scraping on the target pages, utilizing various HTML tags to extract the necessary information. The output is formatted as a JSON-like structure adapted for Python—a list of dictionaries. However, the data is stored in a DataFrame for the subsequent steps.
-### Transformations
-Once the raw information is downloaded, transformations are applied to clean the data. These include operations such as replace, split, format modification, and adding or removing fields.
-### Data Quality Validations
-Using the DataQualityKit library, a series of validations are applied to the DataFrame to ensure minimum data quality. This includes validation rules for missing values, among others.
-### Load
-Finally, if the data meets the minimum quality requirements, it is stored in both the raw and master zones for future use.
-### Logging
-The project structure is designed to be executed periodically. As a result, it generates an accumulated log of execution results, detailing each run and providing necessary information for debugging if needed.
- 
+```bash
+  python -m venv venv
+  source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
+
+3. Install dependencies:
+```bash
+  pip install -r requirements.txt
+```
+
+4. Run the scraper and ETL process:
+```bash
+  python main.py
+```
+
+5. Run tests to verify functionality:
+
+```bash
+  pytest tests/
+```
+
+---
+
+## 📁 Sample Output
+
+```csv
+job_url,job_name,job_company,job_technologies_stack,job_description,publication_date,city,workplace_location,has_been_updated,salary_lower_bound,salary_upper_bound,cutoff_date
+https://www.tecnoempleo.com/job-name/net/rf-5fc1,Job Name ,Job Company,"['React', 'TypeScript', 'GraphQL']",Job description ...,2025-05-23,Málaga,Híbrido,False,30000.0,33000.0,2025-05-24
+...
+```
+---
+
+
+## 📂 Project Structure
+
+```bash
+  JobData/
+  ├── data/
+  │   ├── master/            # Output CSV file with clean job data
+  │   └── raw/               # Output CSV file with clean raw data
+  ├── job_data/
+  │   ├── scraper.py         # Main script for scraping
+  │   ├── processing.py      # Main script for processing
+  │   ├── quality.py         # Main script for data quality validations
+  │   └── pipeline.py        # Main script for pipeline
+  ├── tests/
+  │   ├── test_scraper.py    # Unit tests for scraping logic
+  │   ├── test_processing.py # Unit tests for processing logic
+  │   ├── test_quality.py    # Unit tests for data quality validations logic
+  │   └── test_pipeline.py   # Unit tests for pipeline logic
+  ├── main.py                # Main script
+  ├── requirements.txt       # Python dependencies
+  ├── CHANGELOG.md           # Project documentation
+  └── README.md              # Project documentation
+```
+
+---
