@@ -1,22 +1,25 @@
+import logging.config
+
+from job_data import tecnoempleo
 from datetime import date
-from pandas import DataFrame
-from job_data import scrapy, utils, pipeline
+from essentialkit import file_operations
+
+
+logger = logging.getLogger(__name__)
+
+
+def setup_logging():
+    config_logging = file_operations.read_json("config/log_configuration.json")
+    logging.config.dictConfig(config_logging)
 
 
 def main():
+    setup_logging()
+    logger.info("Tecnoempleo ETL initialized")
     cutoff_date: date = date.today()
-    path_provincias_info: str = 'config/provincias_info.json'
-    path_provincias_data: str = f'data/provincias_info_{cutoff_date}.csv'
-    path_jobs_data: str       = f'data/empleos_info_{cutoff_date}.csv'
-
-    provincias_info: dict = utils.read_json(path=path_provincias_info)
-
-    provincias_data: DataFrame = scrapy.download_provincias_data(provincias_info)
-    jobs_data: DataFrame       = scrapy.download_jobs_data(provincias_info)
-
-    pipeline.processing_provincias_info(provincias_data).to_csv(path_provincias_data, index=False, sep=';')
-    pipeline.processing_job_data(jobs_data).to_csv(path_jobs_data, index=False, sep=';')
+    tecnoempleo.pipeline.etl(cutoff_date=cutoff_date)
+    logger.info("Tecnoempleo ETL completed")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

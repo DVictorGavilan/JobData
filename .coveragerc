@@ -1,0 +1,4 @@
+[run]
+omit = job_data/tecnoempleo/pipeline.py
+        main.py
+        setup.py
