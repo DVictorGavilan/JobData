@@ -22,8 +22,13 @@ def get_html(url: str) -> BeautifulSoup:
     :return: A BeautifulSoup object containing the parsed HTML content of the
         fetched web page.
     """
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                      "AppleWebKit/537.36 (KHTML, like Gecko) "
+                      "Chrome/120.0.0.0 Safari/537.36"
+    }
     try:
-        response: Response = requests.get(url=url, timeout=10)
+        response: Response = requests.get(url=url, headers=headers, timeout=10)
         response.raise_for_status()
         return BeautifulSoup(markup=response.content, features="html.parser")
     except requests.exceptions.RequestException:
