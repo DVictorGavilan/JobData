@@ -58,8 +58,8 @@ For any bugs or questions, please contact [Dani Gavilán](mailto:danigavipedro96
 1. Clone the repository:
 
 ```bash
-  git clone https://github.com/your-username/tecnoempleo-job-scraper.git
-  cd tecnoempleo-job-scraper
+  git clone https://github.com/DVictorGavilan/JobData.git
+  cd JobData
 ```
 
 2. Create a virtual environment (optional but recommended):
