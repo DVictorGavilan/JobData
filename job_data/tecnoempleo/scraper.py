@@ -118,7 +118,8 @@ def get_job_company(job_div: Tag) -> str:
     )
     if element:
         return element.text.strip()
-    raise ElementNotFound(f"{job_company_tag}")
+    # raise ElementNotFound(f"{job_company_tag}")
+    return "N/A"
 
 
 def get_job_technologies_stack(job_div: Tag) -> list[str]:
